@@ -1,0 +1,30 @@
+import objetos.*
+
+
+describe "Test de las personas" {
+
+ 	method initialize() {
+ 		rebeca.cobrar(1000)
+ 	}
+
+	test "ahorros de les pibes" {
+		pepe.cobrar(2000)
+		pepe.gastar(100)
+		assert.equals(1900, pepe.ahorros())
+		assert.equals(1000, rebeca.ahorros())
+	}
+
+//	test "ir a comer" {
+//		rebeca.salirAComer()
+//		ada.salirAComer()
+//		assert.equals(500, rebeca.ahorros())
+//		assert.equals(2500, ada.ahorros())
+//	}
+//
+//	test "empresa" {
+//		empresa.empleados(#{pepe, ada, rebeca})
+//		assert.equals(ada, empresa.masRico())		
+//	}
+
+}
+
